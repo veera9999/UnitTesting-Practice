@@ -57,7 +57,7 @@ function TodoList() {
       <button onClick={addTodo}>Add Todo</button>
       <ul>
         {todos.map((todo) => (
-          <li>
+          <li key={todo.id}>
             {todo.title}
             <button onClick={() => removeTodo(todo.id)}>Remove</button>
           </li>
